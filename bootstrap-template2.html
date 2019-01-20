@@ -11,17 +11,19 @@
     <title>Hello, world!</title>
   </head>
   <body>
-<!--  -->
-    <div class= "container">
 
-        <!--Static 4-Column layout-->
+    <!--Static 4-Column layout-->
+    <div class= "container">
         <!--Working with rows and columns-->
         <!--Sizes(lg,md,sm,xs) reflect what type of screen the content is displayed on-->
         <div class= "row">
             <div class= "col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <h4>Column One</h4>
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
             </div>
+            <!--Not nessecary now, but can enable when the screen is small to help column formatting-->
+            <!-- <div class= "clearfix visable-sm"></div> -->
 
             <div class= "col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <h4>Column Two</h4>
@@ -41,6 +43,56 @@
             </div>
         </div>
     </div>
+
+    <!---------------------------------------------------------------------------------->
+
+
+
+    <!-- The Collaspable containers do not seem to be working -->
+    <!-- There may have been a change in the documentation -->
+    <div class ="container">
+
+        <div class= "row">
+
+            <div class = "col-lg-2 col-md-2 col-sm-4 col-xs-12">
+
+                <!--When clicked: Show or hide the content of column-->
+                <h4><a href= "#col1Content" data-toggle="collaspe">Column1</a></h4>
+
+                <div id= "col1Content" class= "collaspe in">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                </div>
+
+            </div>
+
+            <!--What happens when the colums change? collaspe in VS collaspe-->
+
+            <div class = "col-lg-4 col-md-4 col-sm-8 col-xs-12">
+
+            <h4><a href= "#col2Content" data-toggle="collaspe">Column2</a></h4>
+
+                <div id= "col2Content" class= "collaspe">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                </div>
+
+            </div>
+
+
+            <div class = "col-lg-12 col-md-6 col-sm-12 col-xs-12">
+
+                <h4><a href= "#col3Content" data-toggle="collaspe">Column3</a></h4>
+
+                <div id= "col3Content" class= "collaspe">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
 
 
     <!-- Optional JavaScript -->
