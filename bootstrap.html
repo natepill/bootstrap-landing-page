@@ -11,7 +11,41 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+<!--  -->
+    <div class= "container">
+        <div class= "page-header"> <!--page header enlarges and adds space around the text-->
+            <h1>Bootstrap Landing Page</h1>
+        </div>
+
+        <div class= 'jumbotron'><!--enlarges your fonts and puts everything in a grey box by default, with rounded corners. If used outside of container then the jumbotron will fill the entire width-->
+            <p>This is just some random text to put inside the bootstrap landing page jumbotron to see how the default presentation of the jumbotron looks like!</p>
+
+            <p>
+                <!-- Different types, colors, and size of buttons-->
+                <a href = "#" class= "btn btn-default btn-lg" role="button">More Info</a>
+                <button type="submit" class="btn btn-danger" role="button">Button</button>
+
+                <!--still not sure what "input" is doing -->
+                <input type= "button" value= "Info" class="btn btn-info">
+
+                <button type = "submit" class= "btn-primary btn-sm">Primary</button>
+                <button type = "submit" class= "btn btn-success btn-xs">Success</button>
+                <button type = "submit" class= "btn btn-warning btn-lg">Warning</button>
+                <button type = "submit" class= "btn btn-link btn-lg">Link</button>
+
+                <button type = "button" class= "btn btn-lg btn-primary" disabled= 'disabled'>Disabled Button</button>
+                <a href = "#" class= "btn btn-default btn-lg disabled" role="button">Disbaled Link</a>
+
+                <!-- Button Groups: work similarly to how radion buttons work-->
+                <div class= "btn-group btn-group-lg" role="group">
+                    <button type = "button" class= "btn btn-default">Small</button>
+                    <button type = "button" class= "btn btn-default">Medium</button>
+                    <button type = "button" class= "btn btn-default">Large</button>
+                </div>
+            </p>
+
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
